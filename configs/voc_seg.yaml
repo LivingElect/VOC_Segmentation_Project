@@ -1,0 +1,47 @@
+# VOC Segmentation Configuration
+
+# Data settings
+data:
+  root: "./data"
+  train_split: "train"
+  val_split: "val"
+  img_size: 256
+  batch_size: 8
+  num_workers: 4
+
+# Model settings
+model:
+  num_classes: 21  # 20 classes + 1 background
+  in_channels: 3
+  feature_channels: 64
+
+# Training settings
+training:
+  epochs: 50
+  lr: 0.001
+  weight_decay: 0.0001
+  device: "cuda" if available else "cpu"
+
+# VOC Color palette (RGB to class ID mapping)
+color_palette:
+  background: [0, 0, 0]
+  aeroplane: [128, 0, 0]
+  bicycle: [0, 128, 0]
+  bird: [128, 128, 0]
+  boat: [0, 0, 128]
+  bottle: [128, 0, 128]
+  bus: [0, 128, 128]
+  car: [128, 128, 128]
+  cat: [64, 0, 0]
+  chair: [192, 0, 0]
+  cow: [64, 128, 0]
+  diningtable: [192, 128, 0]
+  dog: [64, 0, 128]
+  horse: [192, 0, 128]
+  motorbike: [64, 128, 128]
+  person: [192, 128, 128]
+  pottedplant: [0, 64, 0]
+  sheep: [128, 64, 0]
+  sofa: [0, 192, 0]
+  train: [128, 192, 0]
+  tvmonitor: [0, 64, 128]

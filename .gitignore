@@ -1,0 +1,32 @@
+# Ignore data files
+/data/VOCdevkit/VOC2012/JPEGImages/*
+/data/VOCdevkit/VOC2012/SegmentationClass/*
+/data/VOCdevkit/VOC2012/ImageSets/
+
+# Ignore checkpoints
+/checkpoints/*
+
+# Ignore output files
+/output/*
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Ignore CUDA cache
+*.cuda*
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
